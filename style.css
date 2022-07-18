@@ -1,0 +1,113 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(background.JPG);
+    background-size: cover;
+    background-position: center;
+}
+.booking-form-box
+{
+    max-width: 350px;
+    border: 1px solid gray;
+    margin:8px auto 0;
+    
+}
+.radio-button
+{
+    margin: 0 20px;
+}
+.radio-button .button{
+    margin: 20px 10px 20px 0;
+    box-shadow: none;
+}
+.radio-button .button::after
+{
+ content: '';
+ height:15px;
+ width:15px;
+ top:-2px;
+ left:-1px;
+ background-color:azure;
+ position: relative;   
+ display:inline;
+ border: 3px solod lightgrey;
+ visibility: visible;
+ border-radius: 50%;
+}
+.radio-button .button:checked:after
+{
+content:'' ;
+background-color: #000;
+transition: 0.5s;
+}
+.radio-button span{
+    color: aliceblue;
+    margin-right: 5px;
+    font-size: small;
+}
+.booking-form{
+    padding:0 20px 20px;
+
+}
+.booking-form label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgb(231, 236, 239);
+}
+.booking-form input:focus{
+    outline:none;
+    border-color: #ced4ce;
+}
+.booking-form.success .input{
+    border-color:rgb(15, 238, 15);
+}
+.booking-form.error .input{
+    border-color:rgb(246, 31, 31);
+}
+input::placeholder{
+    color:black !important;
+}
+.input-grp{
+    width:151px;
+    display:inline-block;
+}
+.form-control{
+    font-size: 12px;
+    border-radius: 0;
+    color: white;
+    background: none;
+    box-shadow: none!important;
+}
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0%;
+}
+.select-date::-webkit-calender-picker-indicator
+{
+    background: transparent!important;
+}
+.custom-select{
+    color: whitesmoke!important;
+    font-size: 12px!important;
+    border: 1px solid #ced4ce!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    background: transparent!important;
+}
+.custom-select option{
+    color:rgb(36, 34, 34);
+}
+.flight{
+    width:100%;
+    padding: 8px 0;
+    font-size: 12px;
+    border: 1px solid #ced4ce!important;
+    background: transparent!important;
+}
+.flight:hover{
+    background: black!important;
+    color: bisque!important;
+    transition: 0.5s;
+
+}
